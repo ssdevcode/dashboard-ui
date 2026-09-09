@@ -1,5 +1,7 @@
 import axios from "axios";
 
+console.log("=== DASHBOARDSERVICE LOADED ===");
+
 // Azure Backend URL
 const API_BASE_URL =
   "https://demoappbackend-ckdbd4grb2bxdpac.eastus2-01.azurewebsites.net/api/customers";
