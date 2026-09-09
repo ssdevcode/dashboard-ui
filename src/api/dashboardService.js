@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Azure Backend URL
 const API_BASE_URL =
-"https://demoappbackend-ckdbd4grb2bxdpac.eastus2-01.azurewebsites.net/api/customers";
+  "https://demoappbackend-ckdbd4grb2bxdpac.eastus2-01.azurewebsites.net/api/customers";
 
 console.log("API_BASE_URL =", API_BASE_URL);
 
@@ -59,3 +59,4 @@ export const deleteCustomer = async (id) => {
 
   return response.data;
 };
+
