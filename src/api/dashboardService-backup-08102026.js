@@ -1,10 +1,8 @@
 import axios from "axios";
 
-// Azure Backend URL
-const API_BASE_URL =
-  "https://demoappbackend-ckdbd4grb2bxdpac.eastus2-01.azurewebsites.net/api/customers";
-
-console.log("API_BASE_URL =", API_BASE_URL);
+//const API_BASE_URL = "http://localhost:8080/api/customers";
+//const API_BASE_URL = "http://localhost:3001/api/customers";
+const API_BASE_URL = "https://demoappbackend-ckdbd4grb2bxdpac.eastus2-01.azurewebsites.net/api/customers"
 
 /**
  * Create a new customer
@@ -17,17 +15,25 @@ export const createCustomer = async (customer) => {
 /**
  * Search customer by email
  */
+/*
 export const getCustomerByEmail = async (email) => {
-  const url = `${API_BASE_URL}/search?email=${encodeURIComponent(email)}`;
+  const response = await axios.get(
+    `${API_BASE_URL}/search?email=${encodeURIComponent(email)}`
+  );
+  return response.data;
+};
+*/
 
-  console.log("Searching URL:", url);
-
-  const response = await axios.get(url);
+export const getCustomerByEmail = async (email) => {
+  const response = await axios.get(
+    `${API_BASE_URL}/search?email=${encodeURIComponent(email)}`
+  );
 
   console.log("Response Data:", response.data);
 
   return response.data;
 };
+
 
 /**
  * Get all customers
@@ -45,7 +51,6 @@ export const updateCustomer = async (id, customer) => {
     `${API_BASE_URL}/${id}`,
     customer
   );
-
   return response.data;
 };
 
@@ -56,6 +61,5 @@ export const deleteCustomer = async (id) => {
   const response = await axios.delete(
     `${API_BASE_URL}/${id}`
   );
-
   return response.data;
 };
