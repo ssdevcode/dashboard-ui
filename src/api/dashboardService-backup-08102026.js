@@ -1,7 +1,5 @@
 import axios from "axios";
 
-//const API_BASE_URL = "http://localhost:8080/api/customers";
-//const API_BASE_URL = "http://localhost:3001/api/customers";
 const API_BASE_URL = "https://demoappbackend-ckdbd4grb2bxdpac.eastus2-01.azurewebsites.net/api/customers"
 
 /**
