@@ -3,11 +3,11 @@ import axios from "axios";
 console.log("=== DASHBOARDSERVICE LOADED ===");
 
 // Azure Backend URL
-const API_BASE_URL2 =
+const API_BASE_URL =
   "https://demoappbackend-ckdbd4grb2bxdpac.eastus2-
   01.azurewebsites.net/api/customers";
 
-console.log("API_BASE_URL2 =", API_BASE_URL);
+console.log("API_BASE_URL =", API_BASE_URL);
 
 /**
  * Create a new customer
@@ -21,7 +21,7 @@ export const createCustomer = async (customer) => {
  * Search customer by email
  */
 export const getCustomerByEmail = async (email) => {
-  const url = `${API_BASE_URL2}/search?email=${encodeURIComponent(email)}`;
+  const url = `${API_BASE_URL}/search?email=${encodeURIComponent(email)}`;
 
   console.log("Searching URL:", url);
 
@@ -45,7 +45,7 @@ export const getAllCustomers = async () => {
  */
 export const updateCustomer = async (id, customer) => {
   const response = await axios.put(
-    `${API_BASE_URL2}/${id}`,
+    `${API_BASE_URL}/${id}`,
     customer
   );
 
@@ -57,7 +57,7 @@ export const updateCustomer = async (id, customer) => {
  */
 export const deleteCustomer = async (id) => {
   const response = await axios.delete(
-    `${API_BASE_URL2}/${id}`
+    `${API_BASE_URL}/${id}`
   );
 
   return response.data;
