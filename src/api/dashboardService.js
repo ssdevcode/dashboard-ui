@@ -4,7 +4,8 @@ console.log("=== DASHBOARDSERVICE LOADED ===");
 
 // Azure Backend URL
 const API_BASE_URL =
-  "https://ssdevcodebackend-api-ahdgdqhra5h2c7fg.eastus-01.azurewebsites.net";
+//  "https://ssdevcodebackend-api-ahdgdqhra5h2c7fg.eastus-01.azurewebsites.net";
+    "ssdevcodebackend-e7cye7cwdnbrewct.eastus2-01.azurewebsites.net";
 
 //  const API_BASE_URL =  "https://ssdevcodebackend-api-ahdgdqhra5h2c7fg.eastus-01.azurewebsites.net/api/customers"
 
