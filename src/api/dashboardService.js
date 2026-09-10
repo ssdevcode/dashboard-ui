@@ -3,10 +3,10 @@ import axios from "axios";
 console.log("=== DASHBOARDSERVICE LOADED ===");
 
 // Azure Backend URL
-const API_BASE_URL =
-  "https://ssdevcodebackend-api-ahdgdqhra5h2c7fg.eastus-01.azurewebsites.net";
+//const API_BASE_URL =
+//  "https://ssdevcodebackend-api-ahdgdqhra5h2c7fg.eastus-01.azurewebsites.net";
 
-//  const API_BASE_URL =  "https://ssdevcodebackend-api-ahdgdqhra5h2c7fg.eastus-01.azurewebsites.net/api/customers"
+  const API_BASE_URL =  "https://ssdevcodebackend-api-ahdgdqhra5h2c7fg.eastus-01.azurewebsites.net/api/customers"
 
 console.log("API_BASE_URL =", API_BASE_URL);
 
