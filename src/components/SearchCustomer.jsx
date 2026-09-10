@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { getCustomerByEmail } from "../api/dashboardService";
-
+//import { getCustomerByEmail } from "../api/dashboardService";
+import  getCustomerByEmail  from "../api/dashboardService";
 const SearchCustomer = () => {
   const [email, setEmail] = useState("");
   const [customer, setCustomer] = useState(null);
