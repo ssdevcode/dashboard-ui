@@ -3,14 +3,8 @@ import axios from "axios";
 console.log("=== DASHBOARDSERVICE LOADED ===");
 
 // Azure Backend URL
-//const API_BASE_URL =
-//    "https://ssdevcodebackend-e7cye7cwdnbrewct.eastus2-01.azurewebsites.net/api/customers";
-
-// Azure APIM  ( Azure Gateway )
 const API_BASE_URL =
-  "https://api-devsscode-eastus-ais-001.azure-api.net/customers";
-
-
+    "https://ssdevcodebackend-e7cye7cwdnbrewct.eastus2-01.azurewebsites.net/api/customers";
 
 console.log("API_BASE_URL =", API_BASE_URL);
 
